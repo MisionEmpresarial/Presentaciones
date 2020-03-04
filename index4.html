@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js demo-4">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Balance Social | Misión Empresarial</title>
+		<meta name="description" content="Balance Social Misión Empresarial" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<!-- custom demo style -->
+		<link rel="stylesheet" type="text/css" href="css/demo4.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="bb-custom-wrapper">
+				
+				<div id="bb-bookblock" class="bb-bookblock">
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							
+						</div>
+						<div class="bb-custom-side">
+							<img src="images/demo4/1.jpg" alt="Smiley face" width="100%"> 
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<img src="images/demo4/2.jpg" alt="Smiley face" width="100%"> 
+						</div>
+						<div class="bb-custom-side">
+							<img src="images/demo4/3.jpg" alt="Smiley face" width="100%"> 
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<img src="images/demo4/4.jpg" alt="Smiley face" width="100%"> 
+						</div>
+						<div class="bb-custom-side">
+							<img src="images/demo4/5.jpg" alt="Smiley face" width="100%"> 
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<img src="images/demo4/6.jpg" alt="Smiley face" width="100%"> 
+						</div>
+						<div class="bb-custom-side">
+							<img src="images/demo4/7.jpg" alt="Smiley face" width="100%"> 
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<img src="images/demo4/8.jpg" alt="Smiley face" width="100%"> 
+						</div>
+						<div class="bb-custom-side">
+							<img src="images/demo4/9.jpg" alt="Smiley face" width="100%"> 
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<img src="images/demo4/10.jpg" alt="Smiley face" width="100%"> 
+						</div>
+						<div class="bb-custom-side">
+							<img src="images/demo4/11.jpg" alt="Smiley face" width="100%"> 
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<img src="images/demo4/12.jpg" alt="Smiley face" width="100%"> 
+						</div>
+						<div class="bb-custom-side">
+							<img src="images/demo4/13.jpg" alt="Smiley face" width="100%"> 
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<img src="images/demo4/14.jpg" alt="Smiley face" width="100%"> 
+						</div>
+						<div class="bb-custom-side">
+							<img src="images/demo4/15.jpg" alt="Smiley face" width="100%"> 
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<img src="images/demo4/16.jpg" alt="Smiley face" width="100%"> 
+						</div>
+						<div class="bb-custom-side">
+							<img src="images/demo4/17.jpg" alt="Smiley face" width="100%"> 
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<img src="images/demo4/18.jpg" alt="Smiley face" width="100%"> 
+						</div>
+						<div class="bb-custom-side">
+							<img src="images/demo4/19.jpg" alt="Smiley face" width="100%"> 
+						</div>
+					</div>
+					<div class="bb-item">
+						<div class="bb-custom-side">
+							<img src="images/demo4/20.jpg" alt="Smiley face" width="100%"> 
+						</div>
+						<div class="bb-custom-side">
+							<img src="images/demo4/21.jpg" alt="Smiley face" width="100%"> 
+						</div>
+					</div>
+				</div>
+
+				<nav>
+					<a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">Primera Página</a>
+					<a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Anterior</a>
+					<a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Siguiente</a>
+					<a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Última Página</a>
+				</nav>
+
+			</div>
+
+		</div><!-- /container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script>
+			var Page = (function() {
+				
+				var config = {
+						$bookBlock : $( '#bb-bookblock' ),
+						$navNext : $( '#bb-nav-next' ),
+						$navPrev : $( '#bb-nav-prev' ),
+						$navFirst : $( '#bb-nav-first' ),
+						$navLast : $( '#bb-nav-last' )
+					},
+					init = function() {
+						config.$bookBlock.bookblock( {
+							speed : 1000,
+							shadowSides : 0.8,
+							shadowFlip : 0.4
+						} );
+						initEvents();
+					},
+					initEvents = function() {
+						
+						var $slides = config.$bookBlock.children();
+
+						// add navigation events
+						config.$navNext.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'next' );
+							return false;
+						} );
+
+						config.$navPrev.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'prev' );
+							return false;
+						} );
+
+						config.$navFirst.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'first' );
+							return false;
+						} );
+
+						config.$navLast.on( 'click touchstart', function() {
+							config.$bookBlock.bookblock( 'last' );
+							return false;
+						} );
+						
+						// add swipe events
+						$slides.on( {
+							'swipeleft' : function( event ) {
+								config.$bookBlock.bookblock( 'next' );
+								return false;
+							},
+							'swiperight' : function( event ) {
+								config.$bookBlock.bookblock( 'prev' );
+								return false;
+							}
+						} );
+
+						// add keyboard events
+						$( document ).keydown( function(e) {
+							var keyCode = e.keyCode || e.which,
+								arrow = {
+									left : 37,
+									up : 38,
+									right : 39,
+									down : 40
+								};
+
+							switch (keyCode) {
+								case arrow.left:
+									config.$bookBlock.bookblock( 'prev' );
+									break;
+								case arrow.right:
+									config.$bookBlock.bookblock( 'next' );
+									break;
+							}
+						} );
+					};
+
+					return { init : init };
+
+			})();
+		</script>
+		<script>
+				Page.init();
+		</script>
+	</body>
+</html>
